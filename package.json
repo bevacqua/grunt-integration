@@ -1,0 +1,40 @@
+{
+  "name": "grunt-integration",
+  "description": "",
+  "homepage": "https://github.com/bevacqua/grunt-integration",
+  "author": {
+    "name": "Nicolas Bevacqua",
+    "email": "ng@bevacqua.io",
+    "url": "http://bevacqua.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bevacqua/grunt-integration.git"
+  },
+  "version": "0.1.0",
+  "licenses": "MIT",
+  "keywords": [
+    "gruntplugin",
+    "integration",
+    "webdriver",
+    "automated",
+    "test",
+    "testing",
+    "travis",
+    "release",
+    "deploy"
+  ],
+  "engines": {
+    "node": "0.10.18",
+    "npm": "1.2.x"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.7.2",
+    "jshint-stylish": "~0.1.4",
+    "load-grunt-tasks": "~0.2.1"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.2"
+  }
+}
