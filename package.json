@@ -28,6 +28,16 @@
     "node": "0.10.18",
     "npm": "1.2.x"
   },
+  "dependencies": {
+    "async": "~0.2.9",
+    "chalk": "~0.4.0",
+    "lodash": "~2.4.1",
+    "mocha": "~1.16.0",
+    "process-finder": "0.0.7",
+    "selenium-standalone-painful": "~2.39.0-2.7.0",
+    "spawn-machine": "~0.1.0",
+    "wd": "~0.2.7"
+  },
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-jshint": "~0.7.2",
@@ -36,15 +46,5 @@
   },
   "peerDependencies": {
     "grunt": "~0.4.2"
-  },
-  "dependencies": {
-    "lodash": "~2.4.1",
-    "spawn-machine": "~0.1.0",
-    "chalk": "~0.4.0",
-    "selenium-standalone-painful": "~2.39.0-2.7.0",
-    "process-finder": "0.0.7",
-    "async": "~0.2.9",
-    "mocha": "~1.16.0",
-    "wd": "~0.2.7"
   }
 }
