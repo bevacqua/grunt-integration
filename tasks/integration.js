@@ -25,7 +25,9 @@ module.exports = function (grunt) {
                     port: 4444,
                     usePromises: true,
                     concurrency: 1,
-                    browsers: [{ browserName: 'chrome' }]
+                    browsers: [{ browserName: 'chrome' }],
+                    timeout: 40000,
+                    reporter: 'spec'
                 }
             }),
             files: this.files
