@@ -1,6 +1,6 @@
 {
   "name": "grunt-integration",
-  "description": "",
+  "description": "Run Integration Tests using Selenium, Mocha, a Server, and a Browser",
   "homepage": "https://github.com/bevacqua/grunt-integration",
   "author": {
     "name": "Nicolas Bevacqua",
@@ -36,5 +36,15 @@
   },
   "peerDependencies": {
     "grunt": "~0.4.2"
+  },
+  "dependencies": {
+    "lodash": "~2.4.1",
+    "spawn-machine": "~0.1.0",
+    "chalk": "~0.4.0",
+    "selenium-standalone-painful": "~2.39.0-2.7.0",
+    "process-finder": "0.0.7",
+    "async": "~0.2.9",
+    "mocha": "~1.16.0",
+    "wd": "~0.2.7"
   }
 }
