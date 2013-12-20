@@ -66,6 +66,10 @@ grunt.initConfig({
 });
 ```
 
+### Usage
+
+For usage examples, you're going to have to sink your teeth in [wd][2].
+
 ### License
 
 MIT
