@@ -21,8 +21,9 @@ module.exports = function (grunt) {
                 program_inherit: true,
                 selenium_inherit: false,
                 tests: {
+                    usePromises: true,
                     concurrency: 1,
-                    usePromises: true
+                    browsers: [{ browserName: "chrome" }]
                 }
             }),
             files: this.files
