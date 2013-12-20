@@ -56,7 +56,9 @@ tests: {
 }
 ```
 
-#### These defaults are good enough that you don't need to touch any of it to get started. You can just configure it like this to get started.
+#### These defaults are good enough that you don't need to touch any of it to get started.
+
+You can just configure it like this to get started.
 
 ```js
 grunt.initConfig({
