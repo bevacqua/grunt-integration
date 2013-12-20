@@ -12,7 +12,7 @@ These are the goals of `grunt-integration`.
 - Execute integration tests using [Mocha][1] and [WebDriver][2]
 - Using real browsers, such as Chrome
 - Automatically, in one command
-- None or little installation hassle
+- Less painful installation process, please!
 
 [**Read the article on Pony Foo**][3]
 
