@@ -23,7 +23,7 @@ module.exports = function (grunt) {
                 tests: {
                     usePromises: true,
                     concurrency: 1,
-                    browsers: [{ browserName: "chrome" }]
+                    browsers: [{ browserName: 'chrome' }]
                 }
             }),
             files: this.files
