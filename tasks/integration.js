@@ -21,6 +21,8 @@ module.exports = function (grunt) {
                 program_inherit: true,
                 selenium_inherit: false,
                 tests: {
+                    hostname: '127.0.0.1',
+                    port: 4444,
                     usePromises: true,
                     concurrency: 1,
                     browsers: [{ browserName: 'chrome' }]
