@@ -34,13 +34,13 @@ npm install --save-dev grunt-integration
 
 Here are the default `options`.
 
-Option|Default|Details
-------|-------|-------
-`program`|`'node app'`|This will be spawned and expected to listen
-`program_port`|`process.env.TEST_PORT || 3333`|Which port will you use? `process.env.TEST_PORT` is available in your tests
-`program_inherit`|`true`|Will program output be printed to the terminal?
-`selenium_inherit`|`false`|Will selenium server output be printed to the terminal?
-`tests`|See below|These are the options passed to `mocha`
+Option              | Default|Details
+--------------------|-------|-------
+`program`           | `'node app'`                      | This will be spawned and expected to listen
+`program_port`      | `process.env.TEST_PORT || 3333`   | Which port will you use? `process.env.TEST_PORT` is available in your tests
+`program_inherit`   | `true`                            | Will program output be printed to the terminal?
+`selenium_inherit`  | `false`                           | Will selenium server output be printed to the terminal?
+`tests`             | See below                         | These are the options passed to `mocha`
 
 Here are the default `tests` options. Note that if you want to change something in `options.tests`, you'll need to replace the whole object, so just copy and paste the defaults, and work from there. That's just how `this.options()` works in Grunt at the moment.
 
