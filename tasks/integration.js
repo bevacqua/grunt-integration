@@ -41,7 +41,7 @@ module.exports = function (grunt) {
         var rready = /Started org\.openqa\.jetty\.jetty\.Server/i;
         var rwarning = /\b(warn(ing)?|error|exception)\b/i;
 
-        console.log('Spawning selenium server...');
+        console.log(chalk.magenta('Spawning selenium server...'));
 
         var child = standalone.start({ stdio: 'pipe' });
 
@@ -80,12 +80,12 @@ module.exports = function (grunt) {
 
 
     function program (ctx, next) {
-        var port = ctx.options.port;
+        var port = ctx.options.program_port;
         var watcher = finder.watch({ port: port, frequency: 400 });
         var env = _.clone(process.env);
         env.PORT = port;
 
-        console.log('Spawning application...');
+        console.log(chalk.magenta('Spawning application...'));
 
         var child = spawn(ctx.options.program, {
             stdio: ctx.options.program_inherit ? 'inherit' : 'pipe',
@@ -100,7 +100,7 @@ module.exports = function (grunt) {
         var teardown = cleanup.bind(null, ctx.app);
 
         watcher.on('listen', function () {
-            console.log('Application online', chalk.magenta(port));
+            console.log(chalk.magenta('Application online'));
             next();
         });
 
@@ -110,7 +110,7 @@ module.exports = function (grunt) {
     function tests (ctx, next) {
         var testdrive = require('../lib/testdrive.js');
 
-        console.log('Executing tests...');
+        console.log(chalk.magenta('Preparing to execute tests...'));
         testdrive(ctx.files, ctx.options.tests, next);
     }
 
